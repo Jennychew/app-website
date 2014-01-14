@@ -51,7 +51,7 @@ footer {
 	padding:1em;
 	margin:0;
 	background-color:#165D61;
-	bottom:0;
+	bottom:0;	
 }
 
 footer p {
@@ -79,16 +79,34 @@ footer p {
 	h2 {
 		font-size:33px;
 		margin-top:.3em;
+		text-align:left;
 	}
 
 	h3 {
 		font-size:14px;
+		text-align:left;
 	}
 	
 	button {
 		float:right;
 	}
+}
 
+
+@media only screen and (min-width: 60em) {
 	
+	h2 {
+		font-size:45px;
+	}
+	
+	h3 {
+		font-size:22px;
+
+	}
+	
+	p {
+		font-size:20px;
+
+	}
 }
 	
