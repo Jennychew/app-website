@@ -48,12 +48,10 @@ button {
 }
 
 footer {
-	padding:2em;
+	padding:1em;
 	margin:0;
 	background-color:#165D61;
 	bottom:0;
-	width:100%;
-
 }
 
 footer p {
