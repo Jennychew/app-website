@@ -1,27 +1,66 @@
 
 article {
-	margin:2em;
+	margin:1em;
+}
+
+.background {
+	background-color: rgba(255,255,255,0.4);
+	width:115%;
+	margin-left:-2em;
+	padding-left:2em;
+	padding-right:2em;
+	box-shadow: -2px 4px 2px 0px gray;
+	padding-bottom:1em;
+}
+
+.textover {
+	width:90%;
 }
 
 
+.image-holder {
+    display:inline-block;
+    position: relative;
+	width:110%;
+	margin-left:-2em;
+	padding-left:2em;
+	padding-right:2em;
+	}
+
+.image-holder:after {
+    content:'';
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    background: #165D61;
+    opacity: 0.8;
+}
+.image-holder:hover:after {
+    opacity: 0.7;
+} 
 
 
 h2 {
-	padding-top:1.3em;
+	padding-top:.3em;
 	margin:0;
-	font-size:28px;
+	font-size:22px;
 	font-family: 'Alef', sans-serif;
 }
 
 h3 {
 	margin:0;
-	font-size:14px;
+	font-size:20px;
+	font-family: 'Alef', sans-serif;
+
 }
 
 
 .logo {
 	max-height:3em;
-	padding:2em;
 	padding-bottom:0;
 }
 
@@ -29,8 +68,21 @@ h3 {
 	display:inline;
 }
 
-#buy-now {
-	right:0;
+
+
+h4 {
+	color:#fff;
+	font-size:30px;
+	top:20%;
+	margin:0;
+	text-align:center;
+	font-family: 'Alef', sans-serif;
+
+	}
+
+
+a:link, a:visited {
+	text-decoration:none;
 }
 
 button {
@@ -86,6 +138,10 @@ body {
 	background-color:#CECECE;
 }
 
+p {
+	margin:0;
+}
+
 footer p {
 	text-align:center;
 	color:white;
@@ -96,38 +152,86 @@ footer {
     left: 0;
     bottom: 0;
     height: 30px;
-    width: 100%;
-	background-color:#165D61;
+    width: 93%;
 	padding:1em;
+	background-color:#333;
 }
 
+	
+
+@media only screen and (min-width:19em){
+
+	.title {
+		margin-top:-6em;
+		position:relative;
+		z-index:2000;
+	}
+	
+	article {
+		margin:2em;
+	}
+	
+	h2 {
+		font-size:28px;
+	}
+	
+	h4 {
+		position:relative;
+		margin-top:50px;
+		z-index:2000;
+
+	}
+	
+	p {
+		font-size:18px;
+	}
+	
+	footer {
+			width:100%;
+	}
+	#buy-now {
+		float:right;
+	}
 
 
-@media only screen and (min-width:38em) {
+}
+
+@media only screen and (min-width:22em){
+	h3 {
+		font-size:25px;
+	}
 	
 	button {
-	border-radius:4px;
-	border:1px;
-	color:#fff;
-	background-color:#165D61;
-	padding:.5em 1em;
+	font-size:13px;
+	}
+}
+
+	
+
+@media only screen and (min-width:35em) {
+	
+	
+	button {
 	font-size:15px;
 	}
 
 	
 	h2 {
 		font-size:33px;
-		margin-top:.3em;
 	}
 
 	h3 {
-		font-size:14px;
+		font-size:35px;
 	}
 	
 	.logo {
 		max-height:4em;
 	}
-}
+	
+	.textover {
+		margin:0;
+	}
+
 
 
 @media only screen and (min-width: 60em) {
