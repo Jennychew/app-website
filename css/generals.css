@@ -1,11 +1,36 @@
 
+.dipper {
+	opacity:0;
+}
+
+.js-dipper-animate {
+		-webkit-animation: dipper-fade 1s linear 1 forwards;
+
+}
+
+
+@-webkit-keyframes dipper-fade {
+	0% {
+		opacity:0;
+	}
+	
+	100% {
+		opacity:1;
+	}
+}
+	
+	
+	
+	
 article {
 	margin:1em;
 }
 
+/*paragraph */
+
 .background {
 	background-color: rgba(255,255,255,0.4);
-	width:115%;
+	width:100%;
 	margin-left:-2em;
 	padding-left:2em;
 	padding-right:2em;
@@ -13,15 +38,16 @@ article {
 	padding-bottom:1em;
 }
 
-.textover {
+.textover { 
 	width:90%;
 }
 
+/*green overlay */
 
 .image-holder {
     display:inline-block;
     position: relative;
-	width:110%;
+	width:100%;
 	margin-left:-2em;
 	padding-left:2em;
 	padding-right:2em;
@@ -37,11 +63,12 @@ article {
     display: block;
     position: absolute;
     background: #165D61;
-    opacity: 0.8;
+    opacity: 0.9;
 }
 .image-holder:hover:after {
     opacity: 0.7;
 } 
+
 
 
 h2 {
@@ -55,9 +82,7 @@ h3 {
 	margin:0;
 	font-size:20px;
 	font-family: 'Alef', sans-serif;
-
 }
-
 
 .logo {
 	max-height:3em;
@@ -68,8 +93,6 @@ h3 {
 	display:inline;
 }
 
-
-
 h4 {
 	color:#fff;
 	font-size:30px;
@@ -77,9 +100,7 @@ h4 {
 	margin:0;
 	text-align:center;
 	font-family: 'Alef', sans-serif;
-
-	}
-
+}
 
 a:link, a:visited {
 	text-decoration:none;
@@ -98,12 +119,18 @@ button {
 	width:100%;
 }
 
+.bringtop {
+		position:relative;
+		margin-top:50px;
+		z-index:2000;
+}
+
+
 
 .carousel {
 	position:relative;
 	padding-bottom:70%;
 }
-
 
 .carousel-buttons {
 	position:absolute;
@@ -128,9 +155,11 @@ button {
 }
 
 
+
 html { /*footer*/
     position: relative;
     min-height: 100%;
+	width:100%;
 }
 
 body {
@@ -151,11 +180,17 @@ footer {
     position: absolute;
     left: 0;
     bottom: 0;
-    height: 30px;
+    height: 70px;
     width: 93%;
 	padding:1em;
 	background-color:#333;
 }
+
+
+	#buy-now {
+		display:block;
+		margin-top:1em;
+	}
 
 	
 
@@ -167,6 +202,10 @@ footer {
 		z-index:2000;
 	}
 	
+	.pulse_rays {
+	margin-top:-2em;
+	}
+	
 	article {
 		margin:2em;
 	}
@@ -175,22 +214,13 @@ footer {
 		font-size:28px;
 	}
 	
-	h4 {
-		position:relative;
-		margin-top:50px;
-		z-index:2000;
-
-	}
 	
 	p {
 		font-size:18px;
 	}
-	
-	footer {
-			width:100%;
-	}
+
 	#buy-now {
-		float:right;
+		float:right;	
 	}
 
 
@@ -241,10 +271,36 @@ footer {
 	}
 	
 	h3 {
-		font-size:22px;
+		font-size:50px;
 	}
-	
+
 	.logo {
 		max-height:6em;
 	}
 }
+
+
+
+
+
+
+
+
+@-webkit-keyframes pulse{       
+   
+    80% {-webkit-transform: scale(0.8);}
+    100% {-webkit-transform: scale(1);}
+ }
+
+ @-moz-keyframes pulse {       
+   
+	80% {-moz-transform: scale(0.8);}
+	100% {-moz-transform: scale(1);}
+}
+  
+.pulse_rays {
+    -webkit-animation: pulse 1.5s linear infinite;
+    -moz-animation: pulse 1.5s linear infinite; 
+  }
+
+
