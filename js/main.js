@@ -63,3 +63,9 @@ $('.dipper-section').waypoint(function (){
 	$dipper.addClass ('js-dipper-animate');
 }, {offset:'60%'});
 
+
+var rand = Math.round(Math.random() * 2);
+var file = 'saying-' + rand + '.html';
+
+$('.rand-saying').load(file)
+

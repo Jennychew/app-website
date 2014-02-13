@@ -191,7 +191,11 @@ footer {
 		display:block;
 		margin-top:1em;
 	}
-
+	
+.saying {
+	font-weight:100;
+	padding-top:.5em;
+}
 	
 
 @media only screen and (min-width:19em){
